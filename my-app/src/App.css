@@ -1,0 +1,296 @@
+.wrapper {
+  background-size: 100%;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/432/original/bg_loki2.gif?1707933424");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  /* margin-left: 200px; */
+  padding: 1px 16px;
+  background: transparent;
+  background: rgba(254, 254, 254, 0.5);
+}
+.container {
+  display: block;
+  margin: 0 auto;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  opacity: 70%;
+
+  transition: all 200ms ease-in-out;
+}
+footer .mail {
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer .icons a:hover {
+  opacity: 70%;
+  transition: all 200ms ease-in-out;
+}
+img:hover,
+button:hover,
+.title:hover {
+  opacity: 80%;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+/* .first {
+  margin-left: 45px;
+} */
+@media screen and (max-width: 700px) {
+  .first {
+    margin-bottom: 45px;
+  }
+}
+.titles {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: left;
+}
+
+.about {
+  /* display: block;
+  margin: 0 auto; */
+  margin-top: 50px;
+}
+.poster {
+  display: flex;
+  justify-content: flex-end;
+}
+.poster img {
+  border-radius: 5px;
+}
+@media screen and (max-width: 994px) {
+  .poster img {
+    width: 378px;
+    margin-top: 20px;
+  }
+  .poster {
+    display: flex;
+    justify-content: center;
+  }
+}
+.title {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.story {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.score {
+  margin-top: 80px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.buttons {
+  margin-top: 52px;
+  display: flex;
+  justify-content: start;
+}
+.button-1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  width: 173px;
+  height: 52px;
+  background-color: #ae0000;
+  color: white;
+  border-radius: 4px;
+}
+
+.button-2 {
+  font-family: "Inter", sans-serif;
+  margin-left: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  width: 107px;
+  height: 52px;
+  background-color: #626262;
+  color: white;
+  border-radius: 4px;
+}
+.button3 {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: end;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  height: 52px;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+}
+
+.trailer iframe {
+  width: 600px;
+  height: 337px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 30px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 700px) {
+  .trailer iframe {
+    width: 350px;
+    height: 275px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.trailer {
+  margin-top: 50px;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.cover {
+  position: relative;
+  padding: 0px 30px;
+  margin-top: 100px;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-images {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  height: 175px;
+  padding: 0px 15px;
+  margin: 1px 10px;
+  /* border: 1px solid #f1f1f1; */
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+}
+
+.child img,
+.child > svg {
+  position: absolute;
+  object-fit: cover;
+  padding: 0;
+  object-position: center;
+  background: #03a9f4;
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+}
