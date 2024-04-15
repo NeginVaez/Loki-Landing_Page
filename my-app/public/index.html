@@ -1,43 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/App.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="wrapper">
+      <!-- The sidebar -->
+      <!-- <div class="sidebar">
+        <div>Morror</div>
+        <a class="active" href="#home">Home</a>
+        <a href="#Browse">Browse</a>
+        <a href="#contact">Trending</a>
+        <a href="#about">Saved</a>
+        <a href="#about">Playlist </a>
+        <a href="#about">Setting</a>
+        <a href="#about">My Profile</a>
+      </div> -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <!-- Page content -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="content">
+        <div class="button3" style="justify-content: start">
+          <!-- <button><i class="fa-solid fa-arrow-left"> </i> Browse</button> -->
+        </div>
+        <div class="container about">
+          <div class="row">
+            <div class="col-md first">
+              <h1 class="title">Loki</h1>
+              <h3 class="title" style="font-size: 28px">Season 2</h3>
+              <p class="story">
+                The mercurial villain Loki resumes his role as the God of
+                Mischief in a new series that takes place after the events of
+                “Avengers: Endgame.”
+              </p>
+              <div class="score">
+                <h3>
+                  <i class="fa-solid fa-star" style="color: #ffdd66"></i>
+                  <i class="fa-solid fa-star" style="color: #ffdd66"></i>
+                  <i class="fa-solid fa-star" style="color: #ffdd66"></i>
+                  <i class="fa-solid fa-star" style="color: #ffdd66"></i>
+                  <i
+                    class="fa-solid fa-star"
+                    style="color: #626262; border-color: #626262"
+                  ></i>
+                </h3>
+                <h4>4 stars rating</h4>
+              </div>
+
+              <div class="buttons">
+                <button class="button-1">
+                  <i
+                    class="fa-solid fa-circle-play"
+                    style="color: #ffff; margin-right: 10px; font-size: 22px"
+                  ></i>
+                  <a
+                    href="https://www.disneyplus.com/series/loki/6pARMvILBGzF"
+                    target="_blank"
+                    >PLAY NOW</a
+                  >
+                </button>
+                <button class="button-2">
+                  <a href="index.html#PHOTOS">PHOTOS</a>
+                </button>
+                <button class="button-2">
+                  <a href="index.html#TRAILER">TRAILER</a>
+                </button>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="poster">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/360/original/IMG_7665-685x1024.jpeg?1707899272"
+                  alt="movie-poster"
+                  width="400px"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container seasons text-center">
+          <!-- <div class="row">
+            <div class="col-md-auto" id="season1">Season 1</div>
+            <div class="col-md-auto" id="season2">Season 2</div>
+          </div> -->
+          <div class="cover">
+            <h2 class="titles" id="PHOTOS">Photos</h2>
+            <button class="left" onclick="leftScroll()">
+              <i class="fas fa-angle-double-left"></i>
+            </button>
+            <div class="scroll-images season-2" id="season2Img">
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/504/original/arc-201-01106_r.jpg?1706946576"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/502/original/arc-202-14437_r.jpg?1706946563"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/501/original/atc2760_201_comp_trx_v0013.1083_r.jpg?1706946558"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/500/original/dam1140_204_comp_inh_v0001.1053_r.jpg?1706946553"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/503/original/arc-201-09981_r.jpg?1706946570"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/363/original/arc-201-12027_r3.jpg?1707902196"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/364/original/arc-201-02295_r.jpg?1707902506"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+              <div class="child">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/365/original/arc-203-26774_r.jpg?1707902232"
+                  alt="Marvel Studios' Loki | Season 2 "
+                  width="250px"
+                  height="175px"
+                />
+              </div>
+            </div>
+            <button class="right" onclick="rightScroll()">
+              <i class="fas fa-angle-double-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container trailer" id="TRAILER">
+          <div class="row">
+            <h2 class="titles" style="padding-left: 35px; margin-bottom: 20px">
+              Trailer
+            </h2>
+
+            <div class="col-md">
+              <iframe src="https://www.youtube.com/watch?v=nW948Va-l10">
+              </iframe>
+            </div>
+            <div class="col-md">
+              <p class="story" style="font-size: 20px">
+                Loki Season 2 picks up in the aftermath of the shocking season
+                finale when Loki finds himself in a battle for the soul of the
+                Time Variance Authority. Along with Mobius, Hunter B-15, and a
+                team of new and returning characters, Loki navigates an
+                ever-expanding and increasingly dangerous Multiverse in search
+                of Sylvie, Judge Renslayer, Miss Minutes, and the truth of what
+                it means to possess free will and glorious purpose.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="button3">
+          <button>
+            More like this <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div> -->
+        <hr class="me-5 ms-5 mt-4" />
+
+        <footer class="mt-4">
+          <div class="icons text-center mb-3">
+            <a
+              href="https://www.instagram.com/negin_v_"
+              target="_blank"
+              title="instagram page"
+              ><i class="fa-brands fa-instagram me-2" style="color: #21201f"></i
+            ></a>
+            <a href="https://t.me/neginvaez1" target="_blank" title="telegram"
+              ><i class="fa-brands fa-telegram me-2" style="color: #21201f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/negin-vaez/"
+              target="_blank"
+              title="linkedin profile"
+              ><i class="fa-brands fa-linkedin me-2" style="color: #21201f"></i
+            ></a>
+            <a
+              href="https://github.com/NeginVaez/"
+              target="_blank"
+              title="github profile"
+            >
+              <i class="fa-brands fa-github" style="color: #21201f"></i
+            ></a>
+          </div>
+          <div class="mail" class="d-flex justify-content-center">
+            <a
+              href="mailto:Negin.vaez@yahoo.com"
+              target="_blank"
+              style="color: #cfbfaa"
+              >Negin.vaez@yahoo.com</a
+            >
+          </div>
+          <p
+            class="text-center mt-3"
+            style="font-size: 15px; font-family: var(--main-text-font)"
+          >
+            This project was coded by Negin, and it is
+            <a
+              href="https://github.com/NeginVaez/Loki-LandingPage"
+              target="_blank"
+              style="color: #cfbfaa"
+            >
+              open-sourced</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/77f60f45f9.js "
+    crossorigin="anonymous"
+  ></script>
+  <script src="src/app.js"></script>
 </html>
